@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced To-Do List</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-indigo-200 dark:bg-gradient-to-r dark:from-gray-700 dark:to-gray-900 dark:text-white">
+
+  <!-- Navbar Section -->
+  <div class="flex justify-center bg-amber-500 hover:bg-red-600 py-4 mb-8">
+    <a href="#habits" class="text-white px-6 py-2 text-lg rounded-md hover:bg-amber-500">Habits</a>
+    <a href="#goals" class="text-white px-6 py-2 text-lg rounded-md hover:bg-amber-500">Goals</a>
+    <a href="#mindset" class="text-white px-6 py-2 text-lg rounded-md hover:bg-amber-500">Mindset</a>
+  </div>
+
+  <!-- Main App Container -->
+  <div class="max-w-lg mx-auto bg-slate-400 p-6 rounded-lg shadow-xl">
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-semibold">To-Do List-</h1>
+      
+      <!-- <button id="toggle-dark-mode" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 border-2 border-transparent dark:bg-gray-700 dark:text-white dark:border-gray-500 dark:hover:bg-gray-600">
+        Toggle Dark Mode
+      </button> -->
+    </div>
+
+    <!-- Task Input Section -->
+    <div class="flex gap-4 mb-6">
+      <input id="task-input" type="text" placeholder="Enter a new task..." class=" text-black flex-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <select id="category-input" class="bg-slate-600 p-2 border border-red-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="General">General</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Secret">Secret</option>
+      </select>
+      <button id="add-task" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">Add Task</button>
+      
+    </div>
+    
+
+    <!-- Task List -->
+    <ul id="task-list" class="space-y-4"></ul>
+
+    <!-- Clear Completed Button -->
+    <button id="clear-completed" class="w-full py-2 mt-6 bg-red-500 text-white rounded-md hover:bg-red-700">Clear Completed Tasks</button>
+
+
+  </div>
+  <footer class="bg-gray-800 text-white text-center py-4 fixed bottom-0 w-full">
+    <p class="text-sm">
+      Made with Love 🫀  <span class="font-semibold">"Devansh Singh"</span>
+    </p>
+    <p class="text-sm">
+      Contact : <a href="mailto:your-email@example.com" class="text-blue-400 hover:underline">Devanshsingh1974@gmail.com</a>
+    </p>
+  </footer>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
